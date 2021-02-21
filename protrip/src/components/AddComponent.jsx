@@ -53,7 +53,7 @@ class AddComponent extends React.Component {
         return (   
           <div>
             <h2>Add Trips</h2>
-            <form onSubmit={this.handleSubmit}>
+            <form onSubmit={this.handleSubmit} className="form">
             <input type="date"  className="trip-start" ref="date" min="1999-01-01" max="2040-12-31"/> 
             <input type="text" placeholder="Enter Place" className="place" ref="place"/> 
             <select className="type" ref="type" name="cars"> 
@@ -73,10 +73,6 @@ class AddComponent extends React.Component {
         );
       }
     }
-    class Shared {
-      sharedData;
-   }
-   
-   const  serviceName = new Shared();
+  
     export default AddComponent;
    
